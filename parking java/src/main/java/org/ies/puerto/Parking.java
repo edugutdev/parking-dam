@@ -7,45 +7,45 @@ import java.util.Scanner;
  * @version 1.0.0
  */
 public class Parking {
-    static void main() {
+    static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        int producto = 0;
-        float suma = 0;
-        System.out.println("=====================");
-        System.out.println("    TIENDA DAM-PRO   ");
-        System.out.println("=====================");
-        System.out.println("Introduce tu nombre: ");
-        String nombre = teclado.nextLine();
-        System.out.println("¿Cuántos productos va a comprar? ");
-        producto = teclado.nextInt();
+        float tarifaHora = 1.50f;
+        int totalVehiculos = 0;
+        int totalHorasRegistradas = 0;
+        int totalCalculosTarifa = 0;
+        float importeTotalCalculado = 0f;
 
-        for (int i = 1; i <=producto ; i++) {
-            System.out.println("Producto "+i);
+
+        String nombreUsuario;
+        System.out.println("Introduzca tu nombre de usuario: ");
+        nombreUsuario = teclado.nextLine();
+
+        int opcion;
+
+        do {
+            mostrarMenu();
+            System.out.println("Opcion: ");
+            opcion = teclado.nextInt();
             teclado.nextLine();
-            System.out.println("Nombre: ");
-            String nombreProducto = teclado.nextLine();
-            System.out.println("Precio: ");
-            float precioProducto = teclado.nextFloat();
-            suma += precioProducto;
-            System.out.println(nombreProducto+" - "+precioProducto+" euros");
+
+            switch (opcion) {
+
+
+            }
 
         }
 
-        System.out.println("=====================");
-        System.out.println("   TOTAL DEL TICKET  ");
-        System.out.println("=====================");
-        System.out.println("Cliente: "+nombre);
-        System.out.println("Productos comprados: "+producto);
-        System.out.println("TOTAL: "+suma+ " euros");
-        System.out.println("Gracias por su compra, "+nombre);
 
 
-        // 1. Pedir el nombre del cliente.
-        // 2. Preguntar la cantidad de productos.
-        // 3. Inicializar el acumulador total.
-        // 4. Usar un bucle for para pedir los productos.
-        // 5. Mostrar el número de productos y el total.
+        // 1. Leer el nombre del usuario.
+        // 2. Repetir el menú con do-while.
+        // 3. Resolver cada opción mediante switch.
+        // 4. Llamar a tus métodos y actualizar acumuladores.
+        // 5. Cerrar Scanner al salir.
 
         teclado.close();
     }
+
+
 }
+
