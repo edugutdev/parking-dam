@@ -40,7 +40,7 @@ Si es **otro ordenador** y todavía no tienes `parking-dam`, clónalo en `~/git/
 2. Selecciona **Java**, **Maven**, **JDK 21**, nombre **`parking-java`**.
 3. Sitúa el proyecto **dentro de la carpeta que ya clonaste**: su ruta final debe ser `~/git/parking-dam/parking-java` (no `parking-java/parking-java`). Si te solicita datos Maven, introduce `groupId: es.dam` y `artifactId: parking-java`.
 4. Si aparece **Create Git repository**, **desactívalo**: el único Git es el de `parking-dam`.
-5. Conserva el `pom.xml` generado. Crea `Main.java` en `src/main/java` o en un paquete (`es.dam`) si así lo has configurado; en ese caso, conserva `package es.dam;`.
+5. Conserva el `pom.xml` generado. Crea `Main.java` en `parking java/src` o en un paquete (`es.dam`) si así lo has configurado; en ese caso, conserva `package es.dam;`.
 6. Crea también `parking-java/README.md` (es el README técnico del programa) desde IntelliJ IDEA.
 
 Estructura final esperada:
@@ -73,7 +73,7 @@ En la raíz de `parking-dam`, crea o completa `.gitignore` sin borrar reglas exi
 ```gitignore
 **/target/
 *.class
-.idea/
+parking java/.idea/
 *.iml
 ```
 
